@@ -16,6 +16,8 @@ bot.on('message', (msg) => {
 
 bot.on('message', (msg) => {
   if (msg.new_chat_members != undefined) {
-    bot.sendMessage(msg.chat.id, 'Вітаємо вас на телеграм каналі Вараш.people ' + data);
-  }
+    bot.sendMessage(msg.chat.id, data.temp +  'Вітаємо вас на телеграм каналі Вараш.people ');
+  };
 });
+
+
