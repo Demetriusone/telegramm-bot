@@ -9,14 +9,13 @@ console.log('bot server started...');
 
 bot.on('message', (msg) => {
   if (msg.new_chat_members != undefined) {
-    bot.sendMessage(msg.chat.id, 'Вітаємо вас на телеграм каналі Вараш.people' + data);
+    bot.sendMessage(msg.chat.id, 'Вітаємо вас на телеграм каналі Вараш.people');
   }
 });
 
 
-
-const osmosis = require('osmosis');
-osmosis
-    .get('https://www.rnpp.rv.ua/intpogoda')
-    .set({'.value': '.value'})   // альтернатива: `.find('title').set('Title')`
-    .data(console.log)  // выведет {'Title': 'Google'}
+bot.on('message', (msg) => {
+  if (msg.new_chat_members != undefined) {
+    bot.sendMessage(msg.chat.id, 'Вітаємо вас на телеграм каналі Вараш.people ' + data);
+  }
+});
